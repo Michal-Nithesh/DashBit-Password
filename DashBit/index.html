@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Django Password Manager</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js" defer></script>
+    </head>
+    <body>
+
+        <header>
+            <nav>
+                <div class="brand"><a herf=""><i class="fa fa-lock" aria-hidden="true"></i>&nbsp;Password Manager</a></div>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="javascript::" onclick="displayModal('login-modal');">Login</a></li>
+                    <li><a href="">SignUp</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--Modals-->
+        <div class="modals-wrapper">
+            <span id="close-modal" title="close"><i class="fa fa-times"></i></span>
+            <!--login modal-->
+            <div class="modal" id="login-modal"></div>
+                <form action="">
+                    <h2>Login</h2>
+                    <input type="text" name="username" placeholder="username">
+                    <input type="email" name="email" placeholder="email">
+                    <input type="submit" value="login">
+                </form>
+        </div>
+
+
+        <footer>
+            <a href="">Link To The Project>>></a>
+        </footer>
+    </body>
+</html>
